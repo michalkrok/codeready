@@ -1,0 +1,2 @@
+# codeready
+CodeReady Workspace snippets
