@@ -14,5 +14,6 @@ spec:
       name: crw-ocp-rel8
   extensions:
     - 'https://marketplace.visualstudio.com/_apis/public/gallery/publishers/redhat/vsextensions/ansible/0.6.0/vspackage'
+    - 'https://github.com/redhat-developer/vscode-yaml/releases/download/1.1.0/yaml-1.1.0-19454.vsix'
     - 'https://github.com/microsoft/vscode-python/releases/download/2021.10.1365161279/ms-python-release.vsix'
     - 'https://github.com/Axosoft/vscode-gitlens/releases/download/v11.6.0/gitlens-11.6.0.vsix'
