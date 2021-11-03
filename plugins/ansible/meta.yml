@@ -12,7 +12,7 @@ spec:
   containers:
     - image: "registry.redhat.io/codeready-workspaces/plugin-openshift-rhel8"
       name: crw-ocp-rel8
-      memoryLimit: '512M'
+      #memoryLimit: '512M'
       env:
       - name: VSCODE_API_VERSION
         value: '1.52.0'
