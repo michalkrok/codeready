@@ -12,6 +12,10 @@ spec:
   containers:
     - image: "registry.redhat.io/codeready-workspaces/plugin-openshift-rhel8"
       name: crw-ocp-rel8
+      memoryLimit: '512M'
+      env:
+      - name: VSCODE_API_VERSION
+        value: '1.52.0'
   extensions:
     - 'https://marketplace.visualstudio.com/_apis/public/gallery/publishers/redhat/vsextensions/ansible/0.6.0/vspackage'
     - 'https://github.com/redhat-developer/vscode-yaml/releases/download/0.11.0/yaml-0.11.0-67.vsix'
