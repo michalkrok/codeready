@@ -10,7 +10,7 @@ icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
 repository: https://github.com/ansible/vscode-ansible.git
 spec:
   containers:
-  - mage: registry.redhat.io/codeready-workspaces/plugin-openshift-rhel8
+  - image: registry.redhat.io/codeready-workspaces/plugin-openshift-rhel8
     name: redhat-ansible
     volumes:
       - name: venv
