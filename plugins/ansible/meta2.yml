@@ -1,0 +1,30 @@
+apiVersion: v2
+publisher: Red Hat
+name: redhat-ansible
+version: 0.6.0
+type: VS Code Extension
+displayName: Vim
+title: Ansible 
+description: Ansible language support
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/ansible/vscode-ansible.git
+spec:
+  containers:
+  - mage: registry.redhat.io/codeready-workspaces/plugin-openshift-rhel8
+    name: redhat-ansible
+    volumes:
+      - name: venv
+        mountPath: /home/user/.venv
+      - name: ansible
+        mountPath: /home/user/.ansible
+    memoryLimit: '512M'
+    env:
+      - name: VSCODE_API_VERSION
+        value: '1.52.0'
+      - name: ANSIBLE_CONFIG
+        value: '/home/user/.ansible/ansible.cfg'
+      - name: 
+  extensions:
+  - 'https://marketplace.visualstudio.com/_apis/public/gallery/publishers/redhat/vsextensions/ansible/0.6.0/vspackage'
+  - 'https://github.com/microsoft/vscode-python/releases/download/2020.7.94776/ms-python-release.vsix'
+  - 'https://open-vsx.org/api/redhat/vscode-yaml/0.14.0/file/redhat.vscode-yaml-0.14.0.vsix'
